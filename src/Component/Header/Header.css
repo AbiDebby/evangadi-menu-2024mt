@@ -1,0 +1,64 @@
+/* Header styling */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header-title-container {
+    text-align: center;
+}
+
+.header-title {
+    font-size: 30px;
+    color: #d47d03;
+    margin-bottom: 5px;
+}
+
+.header-title-underline {
+    width: 70px;
+    height: 3px;
+    background-color: #ff9500;
+    margin: 0 auto;
+}
+
+/* Navigation menu */
+.header-nav {
+    margin-top: 10px;
+}
+
+.header-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.header-menu li a:hover {
+    color: #d47d03;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .header-title {
+        font-size: 24px;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

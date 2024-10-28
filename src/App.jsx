@@ -1,10 +1,13 @@
 import "./App.css";
 import Menu from "./Component/FoodItem/Menu";
 import { menuData } from "./assets/menuData";
+import Header from "./Component/Header/Header";
+import Footer from "./Component/Footer/Footer";
 
 function App() {
   return (
     <>
+      <Header />
       {/* *********************componenet replication method************** */}
 
       {/* <div className="all-container">
@@ -46,7 +49,7 @@ function App() {
       </div> */}
 
       {/* ****************array  map method********************  */}
-      
+
       {/* <div className="all-container">
         <header className="title">
           <h1>Evangadi Menu</h1>
@@ -74,7 +77,7 @@ function App() {
           <div></div>
         </header>
         <div className="foods-container">
-          {menuData.map(({ title, img, price, desc }, i)=>{
+          {menuData.map(({ title, img, price, desc }, i) => {
             return (
               <Menu
                 key={i} //array-index
@@ -87,6 +90,7 @@ function App() {
           })}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

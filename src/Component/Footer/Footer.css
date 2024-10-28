@@ -1,0 +1,61 @@
+/* Footer styling */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -7px 29px 0px;
+    opacity: 0;
+    transform: translateY(50px);
+    /* Initial position for slide-up */
+    animation: slideUp 1s ease-out forwards;
+}
+
+/* Slide-Up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.footer-nav {
+    margin-top: 5px;
+}
+
+.footer-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-menu li a:hover {
+    color: #d47d03;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
